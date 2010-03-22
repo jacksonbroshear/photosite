@@ -1,0 +1,13 @@
+<p>
+  <b>Context:</b>
+  <%=h @photo.context %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @photo.location %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

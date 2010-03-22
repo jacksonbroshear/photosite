@@ -1,0 +1,3903 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100321151329)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "context" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100321151329')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("photos")[0m
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 17:46:32) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/photos]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100321151329)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mDROP TABLE "photos"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100321151329'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100321151329)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "context" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100321151329')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:00:24) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 18:00:28) [GET]
+
+ActionController::RoutingError (No route matches "/photo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:00:33) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:00:58) [GET]
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:01:00) [GET]
+  [4;35;1mPhoto Load (1.2ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:03:11) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:03:47) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:05:01) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:05:17) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:07:16) [GET]
+  [4;35;1mPhoto Load (0.5ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:07:17) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:07:46) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:07:47) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:09:47) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:11:50) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:12:08) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:12:14) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:12:32) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:12:46) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 59ms (View: 54, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:12:58) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:13:05) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:45:15) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 32ms (View: 27, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:45:38) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:45:52) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:47:22) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:47:57) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 81ms (View: 76, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:48:10) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:48:20) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:48:26) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 28ms (View: 23, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:48:47) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering photos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:48:59) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 18:50:08) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:04:12) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+
+ActionView::TemplateError (undefined method `lightboxlinkto' for #<ActionView::Base:0x1043784f8>) on line #3 of app/views/photos/index.html.erb:
+1: <h1>Listing photos</h1>
+2: 
+3: <%= lightboxlinkto "Vancouver", "van.jpg" %> 
+
+    app/views/photos/index.html.erb:3
+    app/controllers/photos_controller.rb:7:in `index'
+
+Rendered rescues/_trace (53.6ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:04:23) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+
+ActionView::TemplateError (undefined method `lightbox_link_to' for #<ActionView::Base:0x1044e6ab0>) on line #3 of app/views/photos/index.html.erb:
+1: <h1>Listing photos</h1>
+2: 
+3: <%= lightbox_link_to "Vancouver", "van.jpg" %> 
+
+    app/views/photos/index.html.erb:3
+    app/controllers/photos_controller.rb:7:in `index'
+
+Rendered rescues/_trace (49.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:08:41) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:09:49) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+ERROR: compiling _run_erb_app47views47photos47index46html46erb RAISED compile error
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+you!"),"/images/van.jpg", {:rel => "l...
+       ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+you!"),"/images/van.jpg", {:rel => "lightbox", :title =...
+                         ^
+Function body:           def _run_erb_app47views47photos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing photos</h1>\n\n"
+
+; @output_buffer.concat(( image_tag("van.jpg", :alt => "Greenery for
+you!"),"/images/van.jpg", {:rel => "lightbox", :title => "Vancouver"} ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:8:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/plaxis/Documents/Programming_Apps/photosite/app/controllers/photos_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+you!"),"/images/van.jpg", {:rel => "l...
+       ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+you!"),"/images/van.jpg", {:rel => "lightbox", :title =...
+                         ^) on line #4 of app/views/photos/index.html.erb:
+1: <h1>Listing photos</h1>
+2: 
+3: <%= image_tag("van.jpg", :alt => "Greenery for
+4: you!"),"/images/van.jpg", {:rel => "lightbox", :title => "Vancouver"} %>
+
+    app/views/photos/index.html.erb:8:in `compile!'
+    app/controllers/photos_controller.rb:7:in `index'
+
+Rendered rescues/_trace (107.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:44:17) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:44:17) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_van.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:44:21) [GET]
+
+ActionController::RoutingError (No route matches "/van.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_van.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:44:33) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:44:34) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_van.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:44:37) [GET]
+
+ActionController::RoutingError (No route matches "/van.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:44:39) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_van.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:45:18) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:45:19) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_van.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:47:49) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:48:15) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:51:13) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:53:30) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:54:07) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:54:09) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:54:20) [GET]
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 35ms (View: 30, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:57:12) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:57:12) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:57:13) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:57:31) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:57:31) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:57:31) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:57:39) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:57:39) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:57:39) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:57:44) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:57:44) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 19:59:24) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:00:50) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:00:50) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:00:50) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:01:11) [GET]
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:01:12) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:01:12) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:01:39) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:02:35) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:04:02) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:04:02) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:04:02) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:05:26) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:05:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/image1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:05:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/image2" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:05:58) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:05:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/image1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:05:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/image2" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:06:07) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:06:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/image1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:06:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/image2" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:06:42) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:06:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/image1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 20:06:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/image2" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:06:51) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:07:02) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:07:04) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:07:07) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-21 20:55:18) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 07:16:37) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 07:16:38) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 07:16:46) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 07:18:34) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 07:18:36) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:51:26) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:51:27) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:54:56) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 76ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:54:56) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:54:57) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:54:57) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:54:57) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:55:00) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:00) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:00) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:00) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:00) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:55:03) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:03) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:04) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:04) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:04) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to jpg (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+  Parameters: {"id"=>"thumb_image1"}
+  [4;36;1mPhoto Load (0.1ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=thumb_image1):
+  app/controllers/photos_controller.rb:16:in `show'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to jpg (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+  Parameters: {"id"=>"thumb_image2"}
+  [4;35;1mPhoto Load (0.1ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=thumb_image2):
+  app/controllers/photos_controller.rb:16:in `show'
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to jpg (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+  Parameters: {"id"=>"thumb_image3"}
+  [4;36;1mPhoto Load (0.1ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=thumb_image3):
+  app/controllers/photos_controller.rb:16:in `show'
+
+Rendered rescues/_trace (45.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to jpg (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+  Parameters: {"id"=>"thumb_image4"}
+  [4;35;1mPhoto Load (0.2ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=thumb_image4):
+  app/controllers/photos_controller.rb:16:in `show'
+
+Rendered rescues/_trace (121.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to jpg (for 127.0.0.1 at 2010-03-22 08:55:33) [GET]
+  Parameters: {"id"=>"thumb_image5"}
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=thumb_image5):
+  app/controllers/photos_controller.rb:16:in `show'
+
+Rendered rescues/_trace (39.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to jpg (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+  Parameters: {"id"=>"thumb_image3"}
+  [4;36;1mPhoto Load (0.1ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=thumb_image3):
+  app/controllers/photos_controller.rb:16:in `show'
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to jpg (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+  Parameters: {"id"=>"thumb_image4"}
+  [4;35;1mPhoto Load (0.1ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=thumb_image4):
+  app/controllers/photos_controller.rb:16:in `show'
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to jpg (for 127.0.0.1 at 2010-03-22 08:55:54) [GET]
+  Parameters: {"id"=>"thumb_image5"}
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=thumb_image5):
+  app/controllers/photos_controller.rb:16:in `show'
+
+Rendered rescues/_trace (115.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:32) [GET]
+
+ActionController::RoutingError (No route matches "/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:34) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:34) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:34) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:34) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:34) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:36) [GET]
+
+ActionController::RoutingError (No route matches "/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:38) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:38) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:38) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:38) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:56:38) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:36) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:02) [GET]
+
+ActionController::RoutingError (No route matches "/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:04) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:04) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:04) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:04) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:04) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:58:13) [GET]
+  [4;36;1mPhoto Load (1.1ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:22) [GET]
+
+ActionController::RoutingError (No route matches "/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:23) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:23) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:23) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:23) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:23) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:25) [GET]
+
+ActionController::RoutingError (No route matches "/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:26) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:26) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:26) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:26) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:58:27) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:59:01) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:01) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/app/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/app/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:03) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/app/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:08) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:09) [GET]
+
+ActionController::RoutingError (No route matches "/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:10) [GET]
+
+ActionController::RoutingError (No route matches "/app/public/images/thumb_image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:10) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:10) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:10) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 08:59:11) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:00:15) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:15) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:16) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:16) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:16) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:16) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:16) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:16) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:16) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 83ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:00:23) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:01:09) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:09) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:09) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:09) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:09) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:09) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:09) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:09) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:10) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:01:13) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:03:33) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+ERROR: compiling _run_erb_app47views47photos47index46html46erb RAISED compile error
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected '<', expecting ')'
+					   <img alt="thumb_image1.jpg" hei...
+					    ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+... alt="thumb_image1.jpg" height="32" src="images/thumb_image1...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...mb_image1.jpg" height="32" src="images/thumb_image1" width="...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...rc="images/thumb_image1" width="32" />
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected '>'
+Function body:           def _run_erb_app47views47photos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<body>\n\n<h2 id=\"example\">Example</h2>\n\n<p>Click in the image and see the <strong>jQuery lightBox plugin</strong> in action.</p>\n<div id=\"gallery\">\n    <ul>\n        <li>\n           "
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to image_tag("image1.jpg") # =>
+					   <img alt="thumb_image1.jpg" height="32" src="images/thumb_image1" width="32" />
+					 ).to_s); @output_buffer.concat "\n           \n        </li>\n\n        <li>\n            <a href=\"image2.jpg\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery a').lightBox();\">\n                <img src=\"thumb_image2.jpg\" width=\"72\" height=\"72\" alt=\"\" />\n            </a>\n        </li>\n        <li>\n            <a href=\"image3.jpg\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery a').lightBox();\">\n                <img src=\"thumb_image3.jpg\" width=\"72\" height=\"72\" alt=\"\" />\n            </a>\n\n        </li>\n        <li>\n            <a href=\"image4.jpg\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery a').lightBox();\">\n                <img src=\"thumb_image4.jpg\" width=\"72\" height=\"72\" alt=\"\" />\n            </a>\n        </li>\n        <li>\n            <a href=\"image5.jpg\" title=\"Utilize a flexibilidade dos seletores da jQuery e crie um grupo de imagens como desejar. $('#gallery a').lightBox();\">\n                <img src=\"thumb_image5.jpg\" width=\"72\" height=\"72\" alt=\"\" />\n\n            </a>\n        </li>\n    </ul>\n</div>\n\n</body>\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:44:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/plaxis/Documents/Programming_Apps/photosite/app/controllers/photos_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected '<', expecting ')'
+					   <img alt="thumb_image1.jpg" hei...
+					    ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+... alt="thumb_image1.jpg" height="32" src="images/thumb_image1...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...mb_image1.jpg" height="32" src="images/thumb_image1" width="...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...rc="images/thumb_image1" width="32" />
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:10: syntax error, unexpected '>') on line #10 of app/views/photos/index.html.erb:
+7:     <ul>
+8:         <li>
+9:            <%= link_to image_tag("image1.jpg") # =>
+10: 					   <img alt="thumb_image1.jpg" height="32" src="images/thumb_image1" width="32" />
+11: 					 %>
+12:            
+13:         </li>
+
+    app/views/photos/index.html.erb:44:in `compile!'
+    app/controllers/photos_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:04:51) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:04:52) [GET]
+
+ActionController::RoutingError (No route matches "/thumb_image5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:05:59) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:06:26) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 85ms (View: 80, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:06:26) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:06:26) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:06:26) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:06:26) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:07:41) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:07:41) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:07:41) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:07:41) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:07:41) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:08:57) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:08:57) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:08:57) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:08:57) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:08:57) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:09:03) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:09:18) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:18) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:18) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:18) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:18) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:09:41) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:41) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:41) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:41) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:09:41) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:11:03) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "40":String) on line #6 of app/views/photos/index.html.erb:
+3: <div id="gallery">
+4:     <ul>
+5:         <li>
+6:            <%= link_to image_tag("image1.jpg", width ='40') %>
+7:            <%= link_to image_tag("image2.jpg", width ='40') %>
+8:            <%= link_to image_tag("image3.jpg", width ='40') %>
+9:         </li>
+
+    app/views/photos/index.html.erb:6
+    app/controllers/photos_controller.rb:7:in `index'
+
+Rendered rescues/_trace (124.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:11:30) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "40":String) on line #6 of app/views/photos/index.html.erb:
+3: <div id="gallery">
+4:     <ul>
+5:         <li>
+6:            <%= link_to image_tag("image1.jpg", width ="40") %>
+7:            <%= link_to image_tag("image2.jpg", width ='40') %>
+8:            <%= link_to image_tag("image3.jpg", width ='40') %>
+9:         </li>
+
+    app/views/photos/index.html.erb:6
+    app/controllers/photos_controller.rb:7:in `index'
+
+Rendered rescues/_trace (49.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:11:32) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+
+ActionView::TemplateError (undefined method `symbolize_keys!' for "40":String) on line #6 of app/views/photos/index.html.erb:
+3: <div id="gallery">
+4:     <ul>
+5:         <li>
+6:            <%= link_to image_tag("image1.jpg", width ="40") %>
+7:            <%= link_to image_tag("image2.jpg", width ='40') %>
+8:            <%= link_to image_tag("image3.jpg", width ='40') %>
+9:         </li>
+
+    app/views/photos/index.html.erb:6
+    app/controllers/photos_controller.rb:7:in `index'
+
+Rendered rescues/_trace (129.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:13:58) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+ERROR: compiling _run_erb_app47views47photos47index46html46erb RAISED compile error
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:6: syntax error, unexpected '=', expecting ')'
+...mage_tag("image1.jpg", :size = '40x40') ).to_s); @output_buf...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:6: syntax error, unexpected ')', expecting kEND
+...jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n   ...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+...mage_tag("image2.jpg", :size = '40x40') ).to_s); @output_buf...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:7: syntax error, unexpected ')', expecting kEND
+...jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n   ...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:8: syntax error, unexpected '=', expecting ')'
+...mage_tag("image3.jpg", :size = '40x40') ).to_s); @output_buf...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:8: syntax error, unexpected ')', expecting kEND
+...jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n   ...
+                              ^
+Function body:           def _run_erb_app47views47photos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<body>\n\n<div id=\"gallery\">\n    <ul>\n        <li>\n           "
+
+
+
+
+; @output_buffer.concat(( link_to image_tag("image1.jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n           "
+; @output_buffer.concat(( link_to image_tag("image2.jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n           "
+; @output_buffer.concat(( link_to image_tag("image3.jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n        </li>\n    </ul>\n</div>\n\n</body>\n"
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:17:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/plaxis/Documents/Programming_Apps/photosite/app/controllers/photos_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/plaxis/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:6: syntax error, unexpected '=', expecting ')'
+...mage_tag("image1.jpg", :size = '40x40') ).to_s); @output_buf...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:6: syntax error, unexpected ')', expecting kEND
+...jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n   ...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:7: syntax error, unexpected '=', expecting ')'
+...mage_tag("image2.jpg", :size = '40x40') ).to_s); @output_buf...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:7: syntax error, unexpected ')', expecting kEND
+...jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n   ...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:8: syntax error, unexpected '=', expecting ')'
+...mage_tag("image3.jpg", :size = '40x40') ).to_s); @output_buf...
+                              ^
+/Users/plaxis/Documents/Programming_Apps/photosite/app/views/photos/index.html.erb:8: syntax error, unexpected ')', expecting kEND
+...jpg", :size = '40x40') ).to_s); @output_buffer.concat "\n   ...
+                              ^) on line #6 of app/views/photos/index.html.erb:
+3: <div id="gallery">
+4:     <ul>
+5:         <li>
+6:            <%= link_to image_tag("image1.jpg", :size = '40x40') %>
+7:            <%= link_to image_tag("image2.jpg", :size = '40x40') %>
+8:            <%= link_to image_tag("image3.jpg", :size = '40x40') %>
+9:         </li>
+
+    app/views/photos/index.html.erb:17:in `compile!'
+    app/controllers/photos_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:14:16) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:14:22) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:14:24) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:24) [GET]
+
+ActionController::RoutingError (No route matches "/style-projects-jquery.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:24) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:24) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.lightbox-0.5.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 09:14:24) [GET]
+
+ActionController::RoutingError (No route matches "/css/jquery.lightbox-0.5.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:21:19) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:21:23) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:21:47) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:21:49) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:22:31) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:22:32) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:33:24) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:33:27) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:33:30) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:33:39) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:34:09) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:35:07) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:35:10) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:36:16) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:39:05) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:46:02) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:46:05) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:46:07) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:46:09) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:46:15) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:46:21) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:46:28) [GET]
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:46:31) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:52:01) [GET]
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:52:49) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:56:54) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:56:57) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:56:58) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:57:02) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 09:57:24) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:03:40) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:03:42) [GET]
+  [4;36;1mPhoto Load (1.2ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:04:35) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:05:13) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:05:14) [GET]
+  [4;35;1mPhoto Load (0.6ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:11:01) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:11:04) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:30:22) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:30:23) [GET]
+
+ActionController::RoutingError (No route matches "/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:30:51) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:30:53) [GET]
+  [4;36;1mPhoto Load (1.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:31:35) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 76ms (View: 72, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:32:12) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:34:50) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:34:58) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:35:13) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:37:16) [GET]
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:37:50) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:38:06) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:49:43) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff6.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff7.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:49:51) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff5.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff6.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 10:49:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/jsfunstuff7.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:50:24) [GET]
+  [4;35;1mPhoto Load (0.4ms)[0m   [0mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 77ms (View: 72, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:51:55) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
