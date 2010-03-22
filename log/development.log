@@ -3901,3 +3901,17 @@ Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 10:51:55) [GET]
 Rendering template within layouts/application
 Rendering photos/index
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 11:04:30) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 36ms (View: 31, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-03-22 12:16:56) [GET]
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/application
+Rendering photos/index
+Completed in 33ms (View: 27, DB: 0) | 200 OK [http://localhost/]
