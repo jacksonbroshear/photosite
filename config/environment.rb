@@ -21,7 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   # config.gem 'factory_girl'
   # config.gem 'rspec', :lib => false
-  config.gem 'rspec-rails', :lib => false
+  # config.gem 'rspec-rails', :lib => false
   # config.gem 'thoughtbot-shoulda',
   #               :lib => false,
   #               :source => 'http://gems.github.com'
