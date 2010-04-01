@@ -1,0 +1,4 @@
+  [4;36;1mPhoto Create (0.5ms)[0m   [0;1mINSERT INTO "photos" ("location", "created_at", "updated_at", "context_of_photo") VALUES('This is the location', '2010-04-01 19:07:50', '2010-04-01 19:07:50', 'This is the context')[0m
+  [4;35;1mPhoto Create (0.6ms)[0m   [0mINSERT INTO "photos" ("location", "created_at", "updated_at", "context_of_photo") VALUES('This is the location', '2010-04-01 19:07:50', '2010-04-01 19:07:50', 'This is the context')[0m
+  [4;36;1mPhoto Create (0.5ms)[0m   [0;1mINSERT INTO "photos" ("location", "created_at", "updated_at", "context_of_photo") VALUES('This is the location', '2010-04-01 19:08:53', '2010-04-01 19:08:53', 'This is the context')[0m
+  [4;35;1mPhoto Create (0.5ms)[0m   [0mINSERT INTO "photos" ("location", "created_at", "updated_at", "context_of_photo") VALUES('This is the location', '2010-04-01 19:08:53', '2010-04-01 19:08:53', 'This is the context')[0m

@@ -9,13 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100321151329) do
+ActiveRecord::Schema.define(:version => 20100401185910) do
 
   create_table "photos", :force => true do |t|
-    t.string   "context"
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "context_of_photo"
   end
 
 end
